@@ -3,4 +3,4 @@
 .idea/
 *.iml
 ## two : maven package generated targetJar files
-/target/*.jar
+##/target/*.jar
