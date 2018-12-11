@@ -1,0 +1,14 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: base  #server name
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.94.90.184:3306/bird?characterEncoding=utf8
+    username: root
+    password: 12345678
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: false

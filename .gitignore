@@ -1,0 +1,6 @@
+## ignore file
+## one : idea plugin generated file
+.idea/
+*.iml
+## two : maven package generated targetJar files
+/target/*.jar
