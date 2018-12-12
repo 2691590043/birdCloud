@@ -11,6 +11,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>bird_base</module>
+        <module>bird_common</module>
+        <module>bird_spit</module>
     </modules>
     <name>parent</name>
 
@@ -22,10 +24,8 @@
     </parent>
 
     <properties>
-        <project.build.sourceEncoding>UTF‐
-            8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF‐
-            8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF‐8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF‐8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
 
@@ -44,7 +44,22 @@
             <artifactId>lombok</artifactId>
             <version>1.16.10</version>
         </dependency>
+
     </dependencies>
+    <build>
+        <plugins>
+            <!-- java编译版本设置 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

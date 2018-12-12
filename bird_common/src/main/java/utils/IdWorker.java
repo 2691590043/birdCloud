@@ -159,5 +159,9 @@ public class IdWorker {
         return id;
     }
 
+    public static void main(String[] args) {
+        System.out.println(new IdWorker(1,1).nextId());
+
+    }
 
 }
