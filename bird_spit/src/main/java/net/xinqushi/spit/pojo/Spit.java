@@ -20,4 +20,21 @@ public class Spit implements Serializable {
     private Integer comment;
     private String state;
     private String parentid;
+
+    @Override
+    public String toString() {
+        return "Spit{" +
+                "_id='" + _id + '\'' +
+                ", content='" + content + '\'' +
+                ", publishtime=" + publishtime +
+                ", userid='" + userid + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", visits=" + visits +
+                ", thumbup=" + thumbup +
+                ", share=" + share +
+                ", comment=" + comment +
+                ", state='" + state + '\'' +
+                ", parentid='" + parentid + '\'' +
+                '}';
+    }
 }

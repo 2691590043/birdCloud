@@ -5,5 +5,5 @@ spring:
     name: spit  #server name for cloud
   data:
     mongodb:
-      host: 192.168.152.152
+      host: 192.168.152.88
       database: spitdb

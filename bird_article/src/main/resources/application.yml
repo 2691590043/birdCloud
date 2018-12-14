@@ -1,0 +1,9 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: article   #server name for cloud
+  data:
+    mongodb:
+      host: 192.168.152.88
+      database: articledb

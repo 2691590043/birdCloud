@@ -13,6 +13,9 @@
         <module>bird_base</module>
         <module>bird_common</module>
         <module>bird_spit</module>
+        <module>bird_article</module>
+        <module>bird_user</module>
+        <module>bird_eureka</module>
     </modules>
     <name>parent</name>
 
@@ -28,6 +31,18 @@
         <project.reporting.outputEncoding>UTF‐8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.M9</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
